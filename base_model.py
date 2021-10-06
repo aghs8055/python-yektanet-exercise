@@ -5,7 +5,7 @@ class BaseModel:
         self.__views = 0
 
     def describeMe(self):
-        print('This is the base model for Ad and Advertiser classes.')
+        print('This class is the base model for Ad and Advertiser classes.')
 
     def get_clicks(self):
         return self.__clicks
