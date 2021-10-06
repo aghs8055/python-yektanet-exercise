@@ -30,5 +30,13 @@ class Ad(BaseModel):
     def set_advertiser(self, advertiser):
         self.__advertiser = advertiser
 
+    def inc_clicks(self):
+        super().inc_clicks()
+        self.__advertiser.inc_clicks()
+
+    def inc_views(self):
+        super().inc_views()
+        self.__advertiser.inc_views()
+
     def describeMe(self):
         print('This class contains fields and methods related to advertising.')
